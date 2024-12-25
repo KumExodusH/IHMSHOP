@@ -1,0 +1,42 @@
+/* Confirmation.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.payment-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.payment-container img {
+    width: 300px;
+    height: auto;
+}
+
+.credit-card-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}

@@ -1,0 +1,242 @@
+/* Header Styling */
+header {
+    background-color: #007bff;
+    /* Your original background color */
+    color: white;
+    padding: 20px 0;
+    /* Adjust padding if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    z-index: 1050;
+    /* Ensure the header stays on top of other elements */
+    position: fixed;
+    /* Fix the header to the top */
+    top: 0;
+    /* Align it to the top of the page */
+    left: 0;
+    /* Ensure it aligns to the left side */
+    width: 100%;
+    /* Make sure the header spans the full width */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 70px;
+}
+
+header .search-bar {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header .btn-light {
+    background-color: #f8f9fa;
+    /* Button background */
+    color: #333;
+    /* Text color for buttons */
+}
+
+/* Default behavior for large screens */
+.search-bar {
+    width: 50%;
+    /* Keep the search bar at 50% width for larger screens */
+    margin-right: 20px;
+    /* Add some space between the search bar and other navbar items */
+    display: flex;
+    /* Flexbox to ensure proper alignment */
+    justify-content: center;
+    /* Center the input field and button */
+}
+
+/* Center the search bar on smaller screens */
+@media (max-width: 767px) {
+    .search-bar {
+        width: 80%;
+        /* Make the search bar take up 80% of the width on small screens */
+        margin: 0 auto;
+        /* Center the search bar */
+        text-align: center;
+        /* Ensures text inside the search bar is also centered */
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        /* Stack the navbar items vertically */
+        align-items: center;
+        /* Center align everything */
+    }
+
+    .navbar-nav {
+        width: 100%;
+        /* Ensure the navbar links take up the full width */
+        justify-content: center;
+        /* Center the navbar links */
+    }
+}
+
+/* Ensure buttons and other navbar elements are aligned properly */
+.navbar-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* Align the navbar items to the right */
+}
+
+/* Styling for navbar items */
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    padding: 8px 16px;
+    text-transform: capitalize;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #005EB8;
+    font-weight: 700;
+}
+
+/* Add padding and spacing for the social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Apply Poppins font to the entire body */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+}
+
+.featured-products img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.promotion-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.search-bar {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style for carousel images */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Style for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    /* Apply bold for headers */
+}
+
+/* Add custom styling to product names and other important text */
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+}
+
+/* Social Footer */
+.social {
+    background-color: #00274D;
+    /* Zanroo-style deep blue background */
+    color: white;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adds space between icons */
+}
+
+.social-icon img {
+    width: 40px;
+    /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    /* Slight zoom on hover for effect */
+}
+
+.social-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.linkedin-icon img {
+    width: 50px;
+    /* Larger LinkedIn icon */
+    height: 50px;
+}
+
+.pim-icon img {
+    width: 45px;
+    /* Larger LinkedIn icon */
+    height: 45px;
+}
+
+.social-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cart */
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
